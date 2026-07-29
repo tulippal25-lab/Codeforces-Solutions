@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class DivideAndConquer {
+public class goodTimes_2241B {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -8,13 +8,15 @@ public class DivideAndConquer {
 
         while (t-- > 0) {
             int x = sc.nextInt();
-            int y = sc.nextInt();
 
-            if (x % y == 0) {
-                System.out.println("YES");
-            } else {
-                System.out.println("NO");
+            int y = 1;
+
+            while (x > 0) {
+                y *= 10;
+                x /= 10;
             }
+
+            System.out.println(y + 1);
         }
 
         sc.close();

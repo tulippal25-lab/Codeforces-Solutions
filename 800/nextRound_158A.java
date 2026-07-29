@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class NextRound {
+public class nextRound_158A {
 
     public static void main(String[] args) {
 
